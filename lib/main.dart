@@ -4,7 +4,6 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:todolist/list_screen.dart';
 import 'package:todolist/todo.dart';
 
-
 late final Box<Todo> todos;
 
 void main() async {
@@ -17,12 +16,12 @@ void main() async {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-    @override
+  @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-                                                                                                                                colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
       home: const ListScreen(),
